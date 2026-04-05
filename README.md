@@ -16,11 +16,17 @@ A. Zafar, D. Yang and G. Chen, "Extract and Characterize Hairpin Vortices in Tur
 **_Required_ Python >= 3.9**
 
 ### How to run the interactive visualization code
-In the root folder, do the following to install all the requirements for Python.
+Download and extract this code.
+
+Install miniconda, then go to start and open anaconda prompt. 'cd' to the code's folder.
+
+Then execute the following commands to create a new environment.
 ```
+conda create -n myenv python=3.9
+conda activate myenv
 pip install -r requirements.txt
 ```
-then in the vis_sys folder, run the file *pyecharts_QtWebEngine.py*.
-- Use the browse button to open the file from the folder *full_data*. 
+then 'cd' to vis_sys folder and run *python pyecharts_QtWebEngine.py*.
+- Use the browse button to open the vtk file from one of the folder from the *full_data* folder and click open.
 - Doing so will automatically read the tree and profiles information from the *.json* file and the clustering infromation from the *_clusters.txt* associated with each dataset. 
 - Currently *.vtk*, *.json* and *_clusters.txt* are only provided for **Benard** and **Cylinder** flow datasets. These files are the output of our vortex extraction and separation strategies explained in the paper.
