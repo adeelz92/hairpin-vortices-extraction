@@ -10,3 +10,4 @@ scipy==1.9.1
 skeletor==1.2.3
 trimesh==3.14.1
 vtk==9.1.0
+PyQtWebEngine==5.15.7
